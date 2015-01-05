@@ -62,7 +62,7 @@
 
 .in-basket-block{
 	position: absolute;
-	z-index: 5;
+	z-index: 11;
 	background: #fff;
 	right: -89px;
 	top: 40px;
@@ -129,7 +129,7 @@
 }
 .private-office{
 	position: absolute;
-	z-index: 5;
+	z-index: 11;
 	width: 161px;
 	background: #fff;
 	right: 154px;
@@ -768,4 +768,7 @@ footer nav{
 .topArrow:after {
     top:-24px;
     color:#fff;
+}
+.without-slider{
+	padding-top: 20px;
 }
