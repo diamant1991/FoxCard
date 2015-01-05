@@ -48,11 +48,45 @@ $(document).ready(function () {
         $(".podskazka-6").css("display","none");
       });
 
-   /*$('.basket').hover(function(){
+   $('.basket').hover(function(){
         $(".in-basket-block").css("display","block");
+        $(".basket").css("background","#fff");
+        $(".basket p img").css("display","none");
       },
       function(){
         $(".in-basket-block").css("display","none");
-      });*/
-	
+        $(".basket").css("background","none");
+        $(".basket p img").css("display","block");
+      });
+
+   $('.in-basket-block').hover(function(){
+        $(".basket").css("background","#fff");
+        $(".basket p img").css("display","none");
+      },
+      function(){
+        $(".basket").css("background","none");
+        $(".basket p img").css("display","block");
+      });
+
+
+      $('.registration').hover(function(){
+        $(".private-office").css("display","block");
+        $(".registration").css("background","#fff");
+      },
+      function(){
+        $(".private-office").css("display","none");
+        $(".registration").css("background","none");
+
+      });
+
+
+        $('.private-office').hover(function(){
+        $(".registration").css("background","#fff");
+      },
+      function(){
+        $(".registration").css("background","none");
+
+      });
+
+	   
 });
