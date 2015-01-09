@@ -47,7 +47,6 @@ $(document).ready(function () {
       function(){
         $(".podskazka-6").css("display","none");
       });
-
    $('.basket').hover(function(){
         $(".in-basket-block").css("display","block");
         $(".basket").css("background","#fff");
