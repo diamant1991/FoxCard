@@ -20,6 +20,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+table, caption, tbody, tfoot, thead, tr, th, td{
+	vertical-align: top !important;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
