@@ -27,6 +27,7 @@
 	background: linear-gradient(to bottom, #ffe03b 0%,#ffd63b 45%,#ffcc3b 85%,#ffc63b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe03b', endColorstr='#ffc63b',GradientType=0 ); 
 	padding-bottom: 4px;
+	padding-top: 4px;
 }
 .upper-band>.container{
 	position: relative;
@@ -55,7 +56,7 @@
 		position: relative;
 		height: 42px;
 		top: -1px;
-		padding-top: 15px;
+		padding-top: 12px;
 		width: 49%;
 		text-align: center;
 	}
@@ -197,7 +198,7 @@
 
 .form{
 	float: left;
-	margin-top: 5px;
+	margin-top: 3px;
 	margin-left: 15px;
 }
 .search {  
@@ -385,6 +386,7 @@ input[type="search"] {
 	background: #475f85;
 	padding: 7px 0;
 	min-width: 945px;
+	border-top: 2px solid #000;
 }
 
 .main-nav nav ul li, .main-nav nav ul li a{
@@ -461,10 +463,6 @@ input[type="search"] {
 	border-bottom: 1px solid #d9d9d9;
 	line-height: 1.5;
 }
-.newsline{
-	margin-top: 15px;
-}
-
 .news-date{
 	font-size: 11px;
 	color: #767676;
