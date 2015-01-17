@@ -1642,7 +1642,106 @@ table tfoot{
 .fp-catalog .links{
 	font-size: 16px;
 }
+.main-catalog{
+	
+}
+.big-list-catalog{
+	display: none;
+}
+.small-list-catalog{
+	display: none;
 
+}
+/*-------------------------Большой список-------------*/
+.big-list-catalog{
+	margin-top: 20px;
+	min-height: 100%;
+	height: 100%;
+}
+.big-list-block{
+	border: 1px solid #b1b1b1;
+	padding: 10px;
+	margin-top: 10px;
+}
+.big-list-block .text-block{
+	margin-left: -3%;
+}
+.big-list-price{
+	float: right;
+	display: inline-block;
+}
+.big-list-info{
+	display: inline-block;
+}
+.big-list-description{
+	float: left;
+	display: inline-block;
+	width: 220px;
+	line-height: 2.5;
+}
+	.big-list-description .articul p:last-child{
+		position: relative;
+		top: -6px;
+	}
+.big-list-img{
+	display: inline-block;
+	float: left;
+	width: 185px;
+	height: 130px;
+}
+.big-list-img img{
+	width: 135px;
+	height: 130px;
+}
+/*-----------------------  Маленький список ---------------*/
+.small-list-catalog{
+	margin-top: 20px;
+}
+.small-list-left{
+	float: left;
+	width: 20%;
+}
+.small-list-block{
+	border: 1px solid #b1b1b1;
+	height:40px;
+	padding: 10px;
+	margin-top: 10px;
+}
+.small-list-price{
+	position: relative;
+	top: -12px;
+}
+.small-list-price .orange-disc{
+	position: relative;
+	top: 8px;
+	left: 5px !important;
+}
+.small-list-left .amount-block{
+	position: relative;
+	top: -4px;
+}
+.small-list-left .add-in-basket{
+	margin-top: 0;
+	background-image: none;
+	text-align: left;
+	position: relative;
+	top: -5px;
+	padding-top: 6px;
+	height: 30px;
+	width: 151px;
+}
+.small-articul{
+	width: 15%;
+}
+.small-link{
+	width: 25%;
+}
+.small-price{
+	width: 23%;
+}
+.small-amount{
+	width: 17%;
+}
 
 @media (max-width: 1200px) {
   .description-block {
