@@ -1,7 +1,22 @@
+var mydivs=new Array('.main-catalog','.big-list-catalog', '.small-list-catalog');
+
+function opcl(arr, e){
+    if ($(e).css('display') == 'none'){
+        for(var i in arr){   
+           $(arr[i]).hide();
+        }
+        $(e).show();       
+    }
+}
+
 $(document).ready(function () {
 	
 	$('.main-nav a').click(function() {
     $('.main-nav a').removeClass('active');
+    $(this).addClass('active');
+  });
+  $('.view').click(function() {
+    $('.view').removeClass('active');
     $(this).addClass('active');
   });
 

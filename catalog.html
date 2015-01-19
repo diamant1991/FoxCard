@@ -250,9 +250,9 @@
 					</div>
 					<div class="view-catalog">
 						<p>Вид каталога</p>
-						<a href="#" class="view"></a>
-						<a href="#" class="view view-1"></a>
-						<a href="#" class="view view-2"></a>
+						<a href="#" class="view active" onclick="opcl(mydivs,'.main-catalog'); return false;"></a>
+						<a href="#" class="view view-1" onclick="opcl(mydivs, '.big-list-catalog'); return false;"></a>
+						<a href="#" class="view view-2" onclick="opcl(mydivs, '.small-list-catalog'); return false;"></a>
 					</div>
 					<div class="main-catalog"><!--Список плиткой-->
 						<div class="fp-block fp-catalog">
@@ -825,7 +825,19 @@
 								<a href="#" class="add-in-basket">Добавить в корзину</a>
 							</div>
 						</div>
-					</div><!-- Конец маленького списка -->		
+					</div><!-- Конец маленького списка -->
+					<div class="clear"></div>
+					<div class="pagination">
+						<a href="#" class="prev-page"></a>
+						<ul class="number-page">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="next-page"></a>
+					</div>		
 				</div>
 			</div><!--end center container-->
 			</div>

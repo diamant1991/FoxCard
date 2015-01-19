@@ -1584,7 +1584,17 @@ table tfoot{
 	width: 50px;
 	height: 48px;
 	border-left: 1px solid #bfbfbf;
-	background-color: #fff
+	background-color: #fff;
+	-webkit-transition: 0.2s all ease-out;
+	-o-transition: 0.2s all ease-out;
+	transition: 0.2s all ease-out;
+}
+
+.view:hover{
+	box-shadow: 0px 1px 7px 4px #dfdfdf inset;
+}
+.view.active{
+	box-shadow: 0px 1px 7px 4px #dfdfdf inset;
 }
 .view-1{background-position: 18px -49px; }
 .view-2{background-position: 18px 16px; border-right: 1px solid #bfbfbf;border-radius: 0 4px 4px 0;}
@@ -1741,6 +1751,54 @@ table tfoot{
 }
 .small-amount{
 	width: 17%;
+}
+
+.prev-page, .next-page, .number-page{
+	float: left;
+}
+.pagination{
+	width: 290px;
+	margin: 40px  auto;
+}
+.number-page{
+	padding-top: 18px;
+}
+.number-page li{
+	float: left;
+	text-align: center;
+	font-size: 17px;
+	width: 32px;
+	font-family: Arial, sans-serif;
+}
+.number-page li a{
+	text-decoration: none;
+	color: #000;
+	padding: 8px;
+}
+.number-page li a:hover{
+	color: #0040ff;
+}
+.next-page, .prev-page{
+	width: 60px;
+	height: 55px;
+	display: block;
+	background-color: #f2f2f2;
+}
+.next-page{
+	background-image: url(../img/csg-54bd160e015e8.png);
+	background-repeat: no-repeat ;
+    background-position: 27px -163px;
+}
+	.next-page:hover{
+		background-position: 27px -102px;
+	}
+.prev-page{
+	background-image: url(../img/csg-54bd160e015e8.png);
+	background-repeat: no-repeat ;
+    background-position: 27px -41px;
+}
+	.prev-page:hover{
+    background-position: 27px 20px;
 }
 
 @media (max-width: 1200px) {
