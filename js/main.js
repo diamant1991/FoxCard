@@ -20,48 +20,20 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
-  
-	 $('.vopros-1').hover(function(){
-        $(".podskazka-1").css("display","block");
-      },
-      function(){
-        $(".podskazka-1").css("display","none");
-      });
 
-	 $('.vopros-2').hover(function(){
-        $(".podskazka-2").css("display","block");
-      },
-      function(){
-        $(".podskazka-2").css("display","none");
-      });
+  /*$('.fp-block').hover(
+          function () {
+          
+            $(this).find('.color-selection').css("display","block");  
 
-	 $('.vopros-3').hover(function(){
-        $(".podskazka-3").css("display","block");
-      },
-      function(){
-        $(".podskazka-3").css("display","none");
-      });
+          },
+          function () {
+         
+            $(this).find('.color-selection').css("display","none");                
+          }   
+        );  */
 
-	 $('.vopros-4').hover(function(){
-        $(".podskazka-4").css("display","block");
-      },
-      function(){
-        $(".podskazka-4").css("display","none");
-      });
 
-	 $('.vopros-5').hover(function(){
-        $(".podskazka-5").css("display","block");
-      },
-      function(){
-        $(".podskazka-5").css("display","none");
-      });
-
-	 $('.vopros-6').hover(function(){
-        $(".podskazka-6").css("display","block");
-      },
-      function(){
-        $(".podskazka-6").css("display","none");
-      });
    $('.basket').hover(function(){
         $(".in-basket-block").css("display","block");
         $(".basket").css("background","#fff");
@@ -104,3 +76,17 @@ $(document).ready(function () {
 
 	   
 });
+  var top_show = 200; 
+  var delay = 1300; 
+  $(document).ready(function() {
+    $(window).scroll(function () { 
+      if ($(this).scrollTop() > top_show) $('#scrollup').fadeIn();
+      else $('#scrollup').fadeOut();
+    });
+
+    $('#scrollup').click(function () {
+      $('body, html').animate({
+        scrollTop: 0
+      }, delay);
+    });
+  });
