@@ -48,16 +48,19 @@
 		</div>
 
 		<div class="second-band">
-			<div class="container">
+			<div class="container" itemscope itemtype="http://schema.org/Organization">
 				<div class="logo">
-				<a href="#">
-					<p>Фокс<span>кард</span></p>
-					<p>издательство</p>
-				</a>
+					<a href="#">
+						<span itemprop="name">
+						<p>Фокс<span>кард</span></p>
+						<p>издательство</p>
+						</span>
+					</a>
 				</div>
+				
 				<div class="contacts">
 					<div>
-						<p><span>+7 (495)</span> 987-43-77</p>
+						<p itemprop="telephone"><span>+7 (495)</span> 987-43-77</p>
 					</div>
 					<div class="feedback-container">
 						<a href="#?w=500" rel="popup_contact_2" class="button poplight">Написать</a>
@@ -65,12 +68,12 @@
 					</div>
 				</div>
 				<div class="number-container">
-					<p><span>+7 (495)</span> 517-39-19</p>
-					<p><span>+7 (916)</span> 110-35-14</p>
+					<p itemprop="telephone"><span>+7 (495)</span> 517-39-19</p>
+					<p itemprop="telephone"><span>+7 (916)</span> 110-35-14</p>
 				</div>
-				<div class="address-container">
+				<div class="address-container" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						
-						<p>г. Москва,<br>ул. Электрозаводская, д. 21</p>
+						<p><span itemprop="addressLocality">г. Москва</span>,<br> <span itemprop="streetAddress">ул. Электрозаводская, д. 21</span></p>
 						<div class="clear"></div>
 						<p>c 9:30 до 18:00</p>
 					
@@ -231,44 +234,50 @@
 			</div>
 			<div class="center-container">
 				<a href="#" class="links back-in">«   Вернуться к покупкам</a>
-				<div class="text-product">
+				<div class="text-product" itemscope itemtype="http://schema.org/Product">
 				<div class="block-images">
 					<div class="big-img">
-						<img src="img/lenta-big.jpg" alt="">
+						<img src="img/lenta-big.jpg" alt="" itemprop="image">
 					</div>
 					<div class="small-img-container">
 					<div class="small-img">
-						<img src="img/lenta-small.jpg" alt="">
+						<img src="img/lenta-small.jpg" alt="" itemprop="image">
 					</div>
 					<div class="small-img">
-						<img src="img/lenta-small.jpg" alt="">
+						<img src="img/lenta-small.jpg" alt="" itemprop="image">
 					</div>
 					<div class="small-img">
-						<img src="img/lenta-small.jpg" alt="">
+						<img src="img/lenta-small.jpg" alt="" itemprop="image">
 					</div>
 				</div>
 				</div>
 				<div class="product-info">
-					<h3>Выпускник детского сада</h3>
+					<h3 itemprop="name">Выпускник детского сада</h3>
+					<span itemprop="description">
 					<div class="status-product">
 						<p>Артикул: <span>xxxxx</span></p>
 						<p>Статус: <span><span class="orange-disc">●</span> Заказ 2-4 дня</span></p>
 						<p>Материал: <span>100% полиэстер 10 х 200 см</span></p>
 						<p>Упаковка: <span>по 50 шт.</span></p>
 					</div>
-					<div class="color-block">
+					<div class="color-block сolor-selection">
 						<p>Выбор цвета:</p>
+						<a href="#" class="red"></a>
+						<a href="#" class="green"></a>
+						<a href="#" class="blue"></a>
+						<a href="#" class="purple"></a>
 					</div>
 					<div class="package">
 						<p>Индивидуальная упаковка:</p>
 						<p>есть</p>
 					</div>
+					</span>
 					<div class="printing">
 						<a href="#" class="links">Печатать</a>
 					</div>
 					<div class="price-product">
-						<div class="total-price">
-							16,50руб
+						<div class="total-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							 <span itemprop="price">16,50</span><span itemprop="priceCurrency">руб</span>
 						</div>
 							<div class="vopros-hover">
 								<a href="#"><img src="img/vopros.png" class="vopros" alt=""></a>
@@ -287,13 +296,13 @@
 					<a href="#" class="add-in-basket">Добавить в корзину</a>
 					<div class="specifications">
 						<h4>Характеристики упаковки</h4>
-						<p>Специализируясь на урологии, гинекологии, дерматологии и венерологии «МедЦентрСервис» предоставляет также поликлинические, хирургические. </p>
+						<p itemprop="description">Специализируясь на урологии, гинекологии, дерматологии и венерологии «МедЦентрСервис» предоставляет также поликлинические, хирургические. </p>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<div class="description-product">
 						<h4>Описание</h4>
-						<p>Специализируясь на урологии, гинекологии, дерматологии и венерологии «МедЦентрСервис» предоставляет также поликлинические, хирургические, косметологические и другие услуги. В нашем медцентре на Курской можно воспользоваться услугами стоматологического кабинета, мы выдаем личные медицинские книжки и справки, оформление полностью официальное, документы вносятся в государственный реестр. Во всех клиниках выполняется медикаментозное прерывание беременности, а в центрах на ст.м. Аэропорт, Улице 1905 года, </p>
+						<p itemprop="description">Специализируясь на урологии, гинекологии, дерматологии и венерологии «МедЦентрСервис» предоставляет также поликлинические, хирургические, косметологические и другие услуги. В нашем медцентре на Курской можно воспользоваться услугами стоматологического кабинета, мы выдаем личные медицинские книжки и справки, оформление полностью официальное, документы вносятся в государственный реестр. Во всех клиниках выполняется медикаментозное прерывание беременности, а в центрах на ст.м. Аэропорт, Улице 1905 года, </p>
 				</div>
 				<div class="else-product">
 					<h4>С этим товаром так же покупают...</h4>
@@ -321,13 +330,14 @@
 		</div>
 	</div>
 	<div class="clear"></div>
-
-	<footer>
-		<div class="container">
+<footer>
+		<div class="container" itemscope itemtype="http://schema.org/Organization">
 			<div class="logo">
-				<a href="#">
+				<a href="#" >
+				<span itemprop="name">
 					<p>Фокс<span>кард</span></p>
 					<p>издательство</p>
+				</span>
 				</a>
 			</div>
 			<nav>
@@ -361,17 +371,19 @@
 					</div>
 					<div class="clear">
 						<img src="img/email.png" alt="gps">
-						<p>foxcard@ya.ru</p>
+						<p itemprop="email">foxcard@ya.ru</p>
 					</div>
+					 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 					<div class="clear">
 						<img src="img/gps.png" alt="gps">
-						<p>г. Москва,<br>ул. Электрозаводская, д. 21</p>
+						<p><span itemprop="addressLocality">г. Москва</span>,<br><span itemprop="streetAddress">ул. Электрозаводская, д. 21</span></p>
 					</div>
+					<span itemprop="telephone"></span>
 					<div class="clear">
 						<img src="img/clock.png" alt="clock">
 						<p>c 9:30 до 18:00</p>
 					</div>
-					
+					</div>
 				</div>
 			</div>
 			<p class="clear copyright">© 2015 Все права защищены</p>

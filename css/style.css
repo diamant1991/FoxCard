@@ -1470,8 +1470,12 @@ table tfoot{
 .status-product p:nth-child(4) span{
 	left:17px;
 }
-.color-block, .package, .printing{
+.color-block, .printing{
 	margin-top: 15px;
+	font-size: 14px;
+}
+.package{
+	margin-top: 10px;
 	font-size: 14px;
 }
 .package p:last-child{
@@ -1893,11 +1897,40 @@ table tfoot{
 	background: green;
 	margin: 5px;
 }
-.color-selection .blue{
+.color-block .green{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: green;
+	margin: 5px;
+}
+.color-selection .blue {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
 	background: #5eb2ff;
+	margin: 5px;
+}
+.color-block .blue{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #0040ff;
+	margin: 5px;
+}
+.color-block .red{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: red;
+	margin: 5px;
+	margin-left: 0;
+}
+.color-block .purple{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: #9c00ff;
 	margin: 5px;
 }
 

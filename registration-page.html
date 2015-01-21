@@ -48,16 +48,19 @@
 		</div>
 
 		<div class="second-band">
-			<div class="container">
+			<div class="container" itemscope itemtype="http://schema.org/Organization">
 				<div class="logo">
-				<a href="#">
-					<p>Фокс<span>кард</span></p>
-					<p>издательство</p>
-				</a>
-			</div>
+					<a href="#">
+						<span itemprop="name">
+						<p>Фокс<span>кард</span></p>
+						<p>издательство</p>
+						</span>
+					</a>
+				</div>
+				
 				<div class="contacts">
 					<div>
-						<p><span>+7 (495)</span> 987-43-77</p>
+						<p itemprop="telephone"><span>+7 (495)</span> 987-43-77</p>
 					</div>
 					<div class="feedback-container">
 						<a href="#?w=500" rel="popup_contact_2" class="button poplight">Написать</a>
@@ -65,12 +68,12 @@
 					</div>
 				</div>
 				<div class="number-container">
-					<p><span>+7 (495)</span> 517-39-19</p>
-					<p><span>+7 (916)</span> 110-35-14</p>
+					<p itemprop="telephone"><span>+7 (495)</span> 517-39-19</p>
+					<p itemprop="telephone"><span>+7 (916)</span> 110-35-14</p>
 				</div>
-				<div class="address-container">
+				<div class="address-container" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 						
-						<p>г. Москва,<br>ул. Электрозаводская, д. 21</p>
+						<p><span itemprop="addressLocality">г. Москва</span>,<br> <span itemprop="streetAddress">ул. Электрозаводская, д. 21</span></p>
 						<div class="clear"></div>
 						<p>c 9:30 до 18:00</p>
 					
@@ -331,11 +334,13 @@
 	<div class="clear"></div>
 
 	<footer>
-		<div class="container">
+		<div class="container" itemscope itemtype="http://schema.org/Organization">
 			<div class="logo">
-				<a href="#">
+				<a href="#" >
+				<span itemprop="name">
 					<p>Фокс<span>кард</span></p>
 					<p>издательство</p>
+				</span>
 				</a>
 			</div>
 			<nav>
@@ -369,17 +374,19 @@
 					</div>
 					<div class="clear">
 						<img src="img/email.png" alt="gps">
-						<p>foxcard@ya.ru</p>
+						<p itemprop="email">foxcard@ya.ru</p>
 					</div>
+					 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 					<div class="clear">
 						<img src="img/gps.png" alt="gps">
-						<p>г. Москва,<br>ул. Электрозаводская, д. 21</p>
+						<p><span itemprop="addressLocality">г. Москва</span>,<br><span itemprop="streetAddress">ул. Электрозаводская, д. 21</span></p>
 					</div>
+					<span itemprop="telephone"></span>
 					<div class="clear">
 						<img src="img/clock.png" alt="clock">
 						<p>c 9:30 до 18:00</p>
 					</div>
-					
+					</div>
 				</div>
 			</div>
 			<p class="clear copyright">© 2015 Все права защищены</p>
