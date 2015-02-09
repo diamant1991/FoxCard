@@ -73,7 +73,17 @@ $(document).ready(function () {
         $(".registration").css("background","none");
 
       });
-
+var $nav2=$(".upper-band")
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 90 && $nav2.hasClass("upper-band")) {
+            $nav2.removeClass("nav").addClass("upper-band-fixed");
+            
+            
+        } else if ($(this).scrollTop() <= 90 && $nav2.hasClass("upper-band-fixed")) {
+            $nav2.removeClass("upper-band-fixed").addClass("upper-band");
+            
+        }
+    }); //scroll
 	   
 });
   var top_show = 200; 
@@ -90,3 +100,5 @@ $(document).ready(function () {
       }, delay);
     });
   });
+
+  
