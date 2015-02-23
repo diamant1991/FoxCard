@@ -10,6 +10,7 @@ function opcl(arr, e){
 }
 
 $(document).ready(function () {
+  
 	
 	$('.main-nav a').click(function() {
     $('.main-nav a').removeClass('active');
@@ -101,4 +102,3 @@ var $nav2=$(".upper-band")
     });
   });
 
-  

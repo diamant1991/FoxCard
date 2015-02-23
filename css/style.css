@@ -72,7 +72,7 @@
 		background: #243858;
 	}
 .register-block{
-	width: 25%;
+	width: 17%;
 	float: left;
 	text-align: center;
 	position: relative;
@@ -207,10 +207,10 @@
 .form{
 	float: left;
 	margin-top: 3px;
-	margin-left: 15px;
+	margin-left: 8px;
 }
 .search {  
-  width: 25%;  
+  width: 35%;  
   position: relative;  
 }  
   
@@ -260,9 +260,10 @@ input[type="search"] {
 	margin: 0 auto;
 	width: 160px;
 	position: relative;
+	top: 10px;
 }
 .basket-block{
-	width: 23%;
+	width: 15%;
 	float: left;
 	position: relative;
 }
@@ -270,7 +271,7 @@ input[type="search"] {
 	.registration a{
 		color: #030303;
 		text-decoration: none;
-		font-size: 13px;
+		font-size: 14px;
 		font-family: Arial, sans-serif;
 	}
 		
@@ -283,6 +284,7 @@ input[type="search"] {
 	width: 136px;
 	cursor: pointer;
 	position: relative;
+	margin: auto;
 }
 	.basket p img{
 		float: right;
@@ -338,8 +340,6 @@ input[type="search"] {
 		display: inline-block;
 	}
 		.contacts p span{
-			font-size: 18px;
-			color: #ff9b01;
 			position: relative;
 		}
 .feedback-container{
@@ -429,7 +429,6 @@ input[type="search"] {
 
 .slider-container{
 	min-width: 1000px;
-	margin-top: 2px;
 	border-top: 1px solid #90aad4;
 	border-bottom: 1px solid #90aad4;
 	background: #e0e6f0; /* Old browsers */
@@ -1764,6 +1763,13 @@ table tfoot{
 	box-shadow: 0px 10px 11px 4px #b1b1b1;
 	display: block;
 	
+
+}
+.file:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
 }
 .file select{
 	float: right;
@@ -1771,16 +1777,17 @@ table tfoot{
 }
 .file .color-selection{
 	float: right;
-	margin-top: 6px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	position: relative;
-	left: 43px;
+	right: 35px;
 }
 .file .files{
 	position: relative;
 	top: 2px;
 }
 .file .color{
-	margin-top: 4px;
+	margin-top: 1px;
 	display: inline-block;
 }
 .amount-catalog{
@@ -2258,8 +2265,16 @@ table tfoot{
 	color: #137fb7 !important;
 }
 
-
-
+#menu li.menu-li{
+	display: inline-block ;
+	width: 49% ;	
+}
+#menu li.menu-li .main-panel-link{
+	width: 100%;
+}
+#menu .dropdown a:hover{
+	color: red !important;
+}
 
 
 

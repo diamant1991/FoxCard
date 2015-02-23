@@ -12,3 +12,28 @@ slideToStart: 0,         //Слайд, с которого начинается слайдшоу. Нумерация слай
 pauseOnAction: true,  //Включение паузы сладшоу при взаимоодействии с управляющим элементом (true/false)
 pauseOnHover: false,   //Включение паузы слайдшоу при наведении курсора мыши на слайд, затем слайдшоу продолжается (true/false)
 controlsContainer: ""  //Дополнительное свойство: можно указать контейнер для элементов навигации. По умолчанию используется контейнер слайдера. Если указанный элемент не будет найден, используется значение по умолчанию.
+
+
+
+
+$(window).scroll(function(){	
+getscroll();	
+if (yScroll > 182)  
+{$('#panel').css('position' ,'fixed').css('top',' 0px')} else  
+{$('#panel').css('position' ,'absolute').css('top', '182px')}	
+
+}); 
+
+
+function getscroll(){ 
+if (self.pageYOffset){ 
+yScroll = self.pageYOffset; 
+xScroll = self.pageXOffset; 
+} else if (document.documentElement && document.documentElement.scrollTop){ 
+yScroll = document.documentElement.scrollTop; 
+xScroll = document.documentElement.scrollLeft; 
+} else if (document.body){ 
+yScroll = document.body.scrollTop; 
+xScroll = document.body.scrollLeft;	
+} 
+};
