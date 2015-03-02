@@ -20,12 +20,8 @@ $(document).ready(function () {
     $('.view').removeClass('active');
     $(this).addClass('active');
   });
- $("#menu li").hover(
-      function () {
-        $('.category-dropdown').css('visibility','visible');
-        $('.category-dropdown').css('opacity','1');
-      }
-      );
+ 
+ 
 
   /*$('.fp-block').hover(
           function () {

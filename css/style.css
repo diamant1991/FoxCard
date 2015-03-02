@@ -7,7 +7,12 @@
 	font-family: helioslightc;
 	src: url(../fonts/helioslightc.otf);
 }
-
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+	height: 0px;
+}
 .container{
 	min-width: 925px;
 	max-width: 1320px;
@@ -72,7 +77,7 @@
 		background: #243858;
 	}
 .register-block{
-	width: 17%;
+	width: 17% !important;
 	float: left;
 	text-align: center;
 	position: relative;
@@ -258,12 +263,12 @@ input[type="search"] {
 
 .registration{
 	margin: 0 auto;
-	width: 160px;
+	width: 100%;
 	position: relative;
 	top: 10px;
 }
 .basket-block{
-	width: 15%;
+	width: 14% !important;
 	float: left;
 	position: relative;
 }
@@ -281,7 +286,7 @@ input[type="search"] {
 	line-height: 1.25;
 	padding-bottom: 8px;
 	padding-left: 10px;
-	width: 136px;
+	width: 100%;
 	cursor: pointer;
 	position: relative;
 	margin: auto;
@@ -840,12 +845,16 @@ footer{
 	padding: 15px;
 	-moz-border-radius: 5px; /* Firefox */
     -webkit-border-radius: 5px; /* Safari, Google Chrome */
-   -o-border-radius: 5px; /* Opera */
-   -ms-border-radius: 5px; /* IE8 */
-   border-radius: 5px; /* CSS3 */
-   margin-top: 2%;
-	margin-left: -2%;
+	-o-border-radius: 5px; /* Opera */
+	 -ms-border-radius: 5px; /* IE8 */
+	 border-radius: 5px; /* CSS3 */
+	 margin-top: 2%;
+     margin-left: -2%;
 }
+	.big-list-description .text-block{
+		line-height: 1.2 !important;
+		margin-top: 1%;
+	}
 .fp-catalog .text-block{
 	width: 100%;
 	margin-top: 10%;
@@ -1153,7 +1162,7 @@ footer{
 	-o-border-radius: 4px;
 	-ms-border-radius: 4px;
 	border-radius: 4px;
-	padding-left: 5px;
+	text-align: center;
 }
 
 .basket-page table tr{
@@ -1532,7 +1541,7 @@ table tfoot{
 	position: relative;
 	top: 2px;
 }
-.amount-catalog .in-basket{
+.big-list-block .in-basket, .fp-catalog .in-basket{
 	display:inline-block;
 	float: left;
 	text-decoration: none;
@@ -1551,10 +1560,14 @@ table tfoot{
 	background-position: 100%;
 	font-family: Tahoma, sans-serif;
 }
-	.amount-catalog .in-basket:hover{
+
+	.in-basket:hover{
 		text-decoration: none;
 	}
-
+	.big-list-price .in-basket{
+		top: 0;
+		left: 8px;
+	}
 .fp-catalog .amount-block input{
 	width: 45px;
 }
@@ -1831,6 +1844,7 @@ table tfoot{
 	border: 1px solid #b1b1b1;
 	padding: 10px;
 	margin-top: 10px;
+	height: 170px;
 }
 .big-list-block .topArrow:before, .big-list-block .topArrow:after{
 	right: 70px;
@@ -1843,10 +1857,12 @@ table tfoot{
 }
 .big-list-price{
 	float: right;
-	display: inline-block;
+	display: block;
 }
 .big-list-info{
-	display: inline-block;
+	display:block;
+	float: left;
+
 }
 .big-list-description{
 	float: left;
@@ -1854,6 +1870,10 @@ table tfoot{
 	width: 220px;
 	line-height: 2.5;
 }
+	.description-size{
+		width: 155px;
+		padding-left: 5px;
+	}
 	.big-list-description .articul p:last-child{
 		position: relative;
 		top: -6px;
@@ -2096,9 +2116,9 @@ table tfoot{
 		color: #000;
 		background-color: #fff;
 		border-bottom: 0;
-		-webkit-box-shadow:0px 0px 0px 2px #ff9b01;
-		-moz-box-shadow:0px 0px 0px 2px #ff9b01;
-		box-shadow: 0px 0px 0px 2px #ff9b01;
+		-webkit-box-shadow:0px 0px 0px 1px #ff9b01;
+		-moz-box-shadow:0px 0px 0px 1px #ff9b01;
+		box-shadow: 0px 0px 0px 1px #ff9b01;
 	}
 	
 	*html #menu li a:hover { /* IE6 only */
@@ -2240,7 +2260,22 @@ table tfoot{
 	.category-dropdown .category-link{
 		font-size: 14px !important;
 		width: 100% !important;
+		position: relative;
 	}
+		.category-dropdown .category-link span {
+			position: absolute;
+			display: block;
+			width: 12px;
+			height: 26px;
+			background-color: #fff;
+			top: 0px;
+			right: -8px;
+			z-index: 999999;
+			display: none;
+		}
+			.category-dropdown .category-link:hover>span{
+				display: block;
+			}
 	.arrow-right{
 		display: inline-block;
 		width: 7px;
@@ -2262,6 +2297,9 @@ table tfoot{
 			border: 1px solid #666;
 			border-right: 0;
 		}
+			#menu .border-bottom-list:hover .category-link span{
+				display: block;
+			}
 	.category-dropdown li:nth-child(2) .dropdown{
 		top: 0px !important;
 	}
@@ -2416,8 +2454,11 @@ table tfoot{
   .small-list-left .add-in-basket{
   	width: 135px;
   }
-
+	
   .small-list-left .add-in-basket{
   	font-size: 12px;
+  }
+  .description-size{
+  	width: 150px;
   }
 }
