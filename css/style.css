@@ -2069,6 +2069,11 @@ table tfoot{
 	#menu {
 		width: 25%;
 		float: left;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;  
 }
 	
 	#menu:before,
@@ -2121,9 +2126,9 @@ table tfoot{
 	#menu li:hover > a {
 		color: #137fb7;
 	}
-	#menu li:hover> .main-panel-link{
+	#menu li:hover> .main-panel-link,    #menu li:hover .main-panel-link.active{
 		color: #000;
-		background-color: #fff;
+		background-color: #fff !important;
 		border-bottom: 0;
 		-webkit-box-shadow:0px 0px 0px 1px #ff9b01;
 		-moz-box-shadow:0px 0px 0px 1px #ff9b01;
@@ -2143,11 +2148,6 @@ table tfoot{
 		z-index: 1;    
 		visibility: hidden;
 		background: #fff;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-		-ms-transition: all .2s ease-in-out;
-		-o-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;  
 		/*-webkit-box-shadow: 0px 0px 16px 0px rgba(50, 50, 50, 0.75);
 		-moz-box-shadow:    0px 0px 16px 0px rgba(50, 50, 50, 0.75);
 		box-shadow:         0px 0px 16px 0px rgba(50, 50, 50, 0.75);*/
@@ -2307,6 +2307,9 @@ table tfoot{
 			border: 1px solid #666;
 			border-right: 0;
 		}
+			#menu .border-bottom-list:hover .category-link{
+				font-weight: 600;
+			}
 			#menu .border-bottom-list:hover .category-link span{
 				display: block;
 			}
