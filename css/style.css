@@ -225,7 +225,7 @@
 }  
   
 .search .input {  
-  width: 100%;  
+  width: 95%;  
   padding: 7px 37px 7px 10px;  
   -moz-box-sizing: border-box;  
   box-sizing: border-box;   
@@ -246,7 +246,7 @@ margin-top: 2px;
 .search .submit {  
   position: absolute;  
   top: 0;  
-  right: 0;  
+  right: 25px;  
   width: 37px;  
   height: 100%;  
   cursor: pointer;  
@@ -371,7 +371,7 @@ input[type="search"] {
 	.number-container p:last-child{
 		margin-top: 13px;
 	}
-	.number-container p{
+	.number-container p span{
 		color: #ff9b01;
 	}
 .address-container{
@@ -402,7 +402,11 @@ input[type="search"] {
 	min-width: 1000px;
 	border-top: 2px solid #000;
 }
-
+.center-container .description-block:hover {
+	-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5) !important;
+	-moz-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5) !important;
+	box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5) !important;
+}
 .main-nav nav ul li, .main-nav nav ul li a{
 	display: inline-block;
 	text-decoration: none;
@@ -573,6 +577,11 @@ input[type="search"] {
 .finished-products .fp-block{
 	height: 350px;
 }
+	.finished-products .fp-block:hover{
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75) !important; 
+		-moz-box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75) !important;
+		box-shadow: 0px 0px 12px 0px rgba(50, 50, 50, 0.75) !important;
+	}
 .finished-products .fp-block:hover{
 	box-shadow: none;
 }
@@ -1867,7 +1876,7 @@ table tfoot{
 .big-list-description{
 	float: left;
 	display: inline-block;
-	width: 220px;
+	width: 230px;
 	line-height: 2.5;
 }
 	.description-size{
@@ -2119,6 +2128,7 @@ table tfoot{
 		-webkit-box-shadow:0px 0px 0px 1px #ff9b01;
 		-moz-box-shadow:0px 0px 0px 1px #ff9b01;
 		box-shadow: 0px 0px 0px 1px #ff9b01;
+		cursor: pointer;
 	}
 	
 	*html #menu li a:hover { /* IE6 only */
@@ -2444,6 +2454,9 @@ table tfoot{
 	}
 	.topArrow:before, .topArrow:after{
 		right: 25%;
+	}
+	.basket{
+		width: 160px;
 	}
 
 }
