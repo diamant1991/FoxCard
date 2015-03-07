@@ -38,8 +38,10 @@
 	.upper-band-fixed{
 		position: fixed;
 		top: 0;
+		left: 0;
 		width: 100%;
 		z-index: 1000;
+
 
 	}
 .upper-band>.container{
@@ -77,7 +79,7 @@
 		background: #243858;
 	}
 .register-block{
-	width: 17% !important;
+	width: 170px !important;
 	float: left;
 	text-align: center;
 	position: relative;
@@ -86,7 +88,7 @@
 	position: absolute;
 	z-index: 11;
 	background: #fff;
-	left: 0;
+	left: -2px;
 	top: 40px;
 	width: 230px;
 	padding-left: 15px;
@@ -94,15 +96,15 @@
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	padding-bottom: 15px;
-	border-right: 1px solid #7f7f7f;
-	border-bottom: 1px solid #7f7f7f;
-	border-left: 1px solid #7f7f7f;
+	border-right: 2px solid #ff9b01;
+	border-bottom: 2px solid #ff9b01;
+	border-left: 2px solid #ff9b01;
 	border-radius: 0 0 5px 5px;
 	-moz-border-radius:0 0 5px 5px;
 	-webkit-border-radius:0 0 5px 5px;
 	-o-border-radius:0 0 5px 5px;
 	-ms-border-radius:0 0 5px 5px;
-	display: none
+	display: none;
 	
 }
 	.in-basket-block:hover{
@@ -215,7 +217,7 @@
 	margin-left: 8px;
 }
 .search {  
-  width: 35%;  
+  width: 44%;  
   position: relative;  
 }  
   
@@ -273,7 +275,7 @@ input[type="search"] {
 		box-shadow:0px 0px 0px 2px #ff9b01;
 	}
 .basket-block{
-	width: 14% !important;
+	width: 170px !important;
 	float: left;
 	position: relative;
 }
@@ -290,7 +292,7 @@ input[type="search"] {
 	color: #030303;
 	line-height: 1.25;
 	padding-bottom: 8px;
-	padding-left: 10px;
+	padding-left: 20px;
 	width: 100%;
 	cursor: pointer;
 	position: relative;
@@ -873,6 +875,7 @@ footer{
 .fp-catalog .text-block{
 	width: 100%;
 	margin-top: 10%;
+	margin-left: 1%;
 }
 	.text-block p:nth-child(2), .text-block p:last-child{
 		margin-top: 10px;
@@ -906,7 +909,7 @@ footer{
 }
 .topArrow:before,
 .topArrow:after {
-    right: 36%;
+    right: 27%;
     top:-25px;
     margin-left:-25px;
     clip:rect(0px, 50px, 25px, 0px);
@@ -1217,6 +1220,7 @@ footer{
 	border:1px solid #d6d6d6;
 	border-left: 0;
 	border-right: 0;
+	text-align: center;
 }
 .basket-page table tbody tr td:first-child{
 	border: 1px solid #d6d6d6;
@@ -1583,7 +1587,7 @@ table tfoot{
 		text-decoration: none;
 	}
 	.big-list-price .in-basket{
-		top: 0;
+		top: 8px;
 		left: 8px;
 	}
 .fp-catalog .amount-block input{
@@ -1843,7 +1847,7 @@ table tfoot{
 	width: 45px;
 }
 .main-catalog{
-	
+	width: 100%;
 }
 .big-list-catalog{
 	display: none;
@@ -1876,6 +1880,8 @@ table tfoot{
 .big-list-price{
 	float: right;
 	display: block;
+	margin-right: 20px;
+	margin-top: 10px;
 }
 .big-list-info{
 	display:block;
@@ -1889,8 +1895,8 @@ table tfoot{
 	line-height: 2.5;
 }
 	.description-size{
-		width: 155px;
-		padding-left: 5px;
+		width: auto;
+		padding-left: 25px;
 	}
 	.big-list-description .articul p:last-child{
 		position: relative;
@@ -2076,7 +2082,7 @@ table tfoot{
 }
 
 	#menu {
-		width: 25%;
+		width: 340px;
 		float: left;
 		-webkit-transition: all .2s ease-in-out;
 		-moz-transition: all .2s ease-in-out;
@@ -2162,6 +2168,7 @@ table tfoot{
 		-moz-box-shadow:    0px 0px 16px 0px rgba(50, 50, 50, 0.75);
 		box-shadow:         0px 0px 16px 0px rgba(50, 50, 50, 0.75);*/
 		z-index: 99999;
+		margin-left: -2px !important;
 	}
 
 	#menu li:hover > ul {
@@ -2364,6 +2371,7 @@ table tfoot{
 	margin-left: 4px;
 	margin-right: 4px;
 }
+
 /*	=	Select */
 .slct {
 	display: block;
@@ -2453,12 +2461,20 @@ table tfoot{
 	.fp-catalog .topArrow:before, .fp-catalog .topArrow:after{
 		right: 42%;
 	}
+	.search {  
+  	width: 38%;  
+    
+}  
 }
 @media (max-width: 1200px) {
   .description-block, .fp-block {
     width: 31%;
     margin: 1%;
   }
+  .search {  
+  width: 32%;  
+    
+}  
 
  
 
@@ -2478,6 +2494,14 @@ table tfoot{
 		width: 105% !important
 	}
 
+}
+@media (max-width: 1080px){
+	.search{
+		width: 25%;
+	}
+	.search .submit{
+		right: 12px;
+	}
 }
 @media (max-width: 1050px) {
   .advantages{
