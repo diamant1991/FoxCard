@@ -2461,6 +2461,9 @@ table tfoot{
 	.basket{
 		width: 160px;
 	}
+	#menu li.menu-li .main-panel-link.link-1{
+		width: 105% !important
+	}
 
 }
 @media (max-width: 1050px) {

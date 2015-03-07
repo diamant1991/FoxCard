@@ -25,10 +25,10 @@ $(document).ready(function () {
 /*------------Скрипт меню----------------*/
   $('.menu-li-1').hover(
           function () {
-            $('.menu-li-2').children('#menu .category-dropdown').css("visibility","hidden");
+            $('.menu-li-2').children('#menu ul.category-dropdown').css("visibility","hidden");
             $('.menu-li-2').children('#menu .main-panel-link').css({'background-color':'transparent',
               'box-shadow':'none'});
-            $(this).children('#menu .category-dropdown').css("visibility","visible");  
+            $(this).children('#menu ul.category-dropdown').css("visibility","visible");  
             $(this).children('#menu .main-panel-link').css({'background-color':'#fff',
               'box-shadow':'0px 0px 0px 1px #ff9b01'});
           }
@@ -38,10 +38,10 @@ $(document).ready(function () {
 
   $('.menu-li-2').hover(
           function () {
-            $('.menu-li-1').children('#menu .category-dropdown').css("visibility","hidden");
+            $('.menu-li-1').children('#menu ul.category-dropdown').css("visibility","hidden");
             $('.menu-li-1').children('#menu .main-panel-link').css({'background-color':'transparent',
               'box-shadow':'none'});
-            $(this).children('#menu .category-dropdown').css("visibility","visible");  
+            $(this).children('#menu ul.category-dropdown').css("visibility","visible");  
             $(this).children('#menu .main-panel-link').css({'background-color':'#fff',
               'box-shadow':'0px 0px 0px 1px #ff9b01'});
           }
@@ -49,7 +49,7 @@ $(document).ready(function () {
           
         );
   $(document).mouseup(function (e) {
-    var drop = $("#menu .category-dropdown");
+    var drop = $("#menu ul.category-dropdown");
     var link= $('#menu .main-panel-link');
     if (drop.has(e.target).length === 0){
         drop.css("visibility","hidden");
