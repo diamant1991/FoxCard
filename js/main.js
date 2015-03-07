@@ -30,7 +30,7 @@ $(document).ready(function () {
               'box-shadow':'none'});
             $(this).children('#menu ul.category-dropdown').css("visibility","visible");  
             $(this).children('#menu .main-panel-link').css({'background-color':'#fff',
-              'box-shadow':'0px 0px 0px 1px #ff9b01'});
+              'box-shadow':'0px 0px 0px 2px #ff9b01'});
           }
           
           
@@ -43,7 +43,7 @@ $(document).ready(function () {
               'box-shadow':'none'});
             $(this).children('#menu ul.category-dropdown').css("visibility","visible");  
             $(this).children('#menu .main-panel-link').css({'background-color':'#fff',
-              'box-shadow':'0px 0px 0px 1px #ff9b01'});
+              'box-shadow':'0px 0px 0px 2px #ff9b01'});
           }
           
           
