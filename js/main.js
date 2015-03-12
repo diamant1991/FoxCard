@@ -27,10 +27,10 @@ $(document).ready(function () {
           function () {
             $('.menu-li-2').children('#menu ul.category-dropdown').css("visibility","hidden");
             $('.menu-li-2').children('#menu .main-panel-link').css({'background-color':'transparent',
-              'box-shadow':'none'});
+              'border':'2px solid transparent'});
             $(this).children('#menu ul.category-dropdown').css("visibility","visible");  
             $(this).children('#menu .main-panel-link').css({'background-color':'#fff',
-              'box-shadow':'0px 0px 0px 2px #ff9b01'});
+              'border':'2px solid #ff9b01','border-bottom':'0'});
           }
           
           
@@ -40,10 +40,10 @@ $(document).ready(function () {
           function () {
             $('.menu-li-1').children('#menu ul.category-dropdown').css("visibility","hidden");
             $('.menu-li-1').children('#menu .main-panel-link').css({'background-color':'transparent',
-              'box-shadow':'none'});
+              'border':'2px solid transparent'});
             $(this).children('#menu ul.category-dropdown').css("visibility","visible");  
             $(this).children('#menu .main-panel-link').css({'background-color':'#fff',
-              'box-shadow':'0px 0px 0px 2px #ff9b01'});
+              'border':'2px solid #ff9b01','border-bottom':'0'});
           }
           
           
@@ -54,7 +54,7 @@ $(document).ready(function () {
     if (drop.has(e.target).length === 0){
         drop.css("visibility","hidden");
         link.css({'background-color':'transparent',
-              'box-shadow':'none'})
+              'border':'2px solid transparent'})
     }
 });
 /*------------------------Конец скрипта меню--------*/

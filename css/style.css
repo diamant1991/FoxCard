@@ -1922,7 +1922,6 @@ table tfoot{
 }
 .small-list-block{
 	border: 1px solid #b1b1b1;
-	height:40px;
 	padding: 10px;
 	margin-top: 10px;
 }
@@ -2121,6 +2120,9 @@ table tfoot{
 		font-size: 14px;
 		font-family: Arial, sans-serif;
 		text-transform: none;
+		border: 2px solid transparent;
+		position: relative;
+		z-index: 100000ж
 	}
 	#menu .link-1{
 		width: 59%;
@@ -2133,7 +2135,6 @@ table tfoot{
 		border-top: 0;
 		padding: 5px 0 12px 0;
 		border: 2px solid #ff9b01;
-		border-top: 0;
 		/*-webkit-box-shadow:0 3px 7px rgba(0,0,0,0.3);
 		-moz-box-shadow:0 3px 7px rgba(0,0,0,0.3);
 		box-shadow: 0 3px 7px rgba(0,0,0,0.3);*/
@@ -2145,11 +2146,11 @@ table tfoot{
 	#menu li:hover> .main-panel-link,    #menu li:hover .main-panel-link.active{
 		color: #000;
 		background-color: #fff !important;
+		border: 2px solid #ff9b01;
 		border-bottom: 0;
-		-webkit-box-shadow:0px 0px 0px 1px #ff9b01;
-		-moz-box-shadow:0px 0px 0px 1px #ff9b01;
-		box-shadow: 0px 0px 0px 1px #ff9b01;
 		cursor: pointer;
+		position: relative;
+		z-index: 100000
 	}
 	
 	*html #menu li a:hover { /* IE6 only */
@@ -2160,7 +2161,7 @@ table tfoot{
 		margin: 0 0 0 0;
 		_margin: 0; /*IE6 only*/
 		position: absolute;
-		top: 41px;
+		top: 39px;
 		z-index: 1;    
 		visibility: hidden;
 		background: #fff;
@@ -2168,7 +2169,7 @@ table tfoot{
 		-moz-box-shadow:    0px 0px 16px 0px rgba(50, 50, 50, 0.75);
 		box-shadow:         0px 0px 16px 0px rgba(50, 50, 50, 0.75);*/
 		z-index: 99999;
-		margin-left: -2px !important;
+		
 	}
 
 	#menu li:hover > ul {
@@ -2344,15 +2345,16 @@ table tfoot{
 		float: none !important;
 		margin-left: 0;
 	}
-.dropdown .dropdown-li-child{
-	padding-top: 10px;
+.dropdown .dropdown-li-child .dropdown-child{
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ccc !important;
 }
 .dropdown-li-child >a:first-child{
 	color: #137fb7 !important;
 }
-
+.dropdown-li-child h6 a{
+	color: #137fb7 !important;
+}
 #menu li.menu-li{
 	display: inline-block ;
 	width: 49% ;	
