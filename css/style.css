@@ -1697,11 +1697,17 @@ table tfoot{
 	outline: 0;
 }
 .sorting-select{
-	display: inline-block;
+	display: block;
+	float: left;
 	vertical-align: top;
-	padding-top: 6px;
-	padding-left: 10px;
+	padding-top: 12px;
+	padding-left: 15px;
 }
+	.sorting-select label{
+		float: left;
+		position: relative;
+		top: 5px;
+	}
 .view{
 	display: block;
 	float: left;
@@ -2367,11 +2373,11 @@ table tfoot{
 }
 
 .select{
-	display: inline-block;
+	display: block;
+	float: left;
 	position: relative;
-	top: 7px;
-	margin-left: 4px;
-	margin-right: 4px;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 
 /*	=	Select */
